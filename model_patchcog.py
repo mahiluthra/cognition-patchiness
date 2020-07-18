@@ -344,7 +344,7 @@ class modelSim(Model):
     if skip_300 is True, patchiness values are not calculated for the first 300 steps-- this makes the model run faster
     collect_cog_dist creates a seperate dataframe for all cognition values for agents at every timestep
     if evolve_disp is true, dispersion rate of plants is free to evolve
-    """"
+    """
     
     def __init__(self, introduce_time, disp_rate, dist, det, cog_fixed = False, \
                  skip_300 = True, collect_cog_dist = False, evolve_disp = False):
@@ -356,7 +356,6 @@ class modelSim(Model):
         self.collect_cog_dist = collect_cog_dist
         self.dist = dist
         self.det = det
-        self.cog = cog
         self.disp_rate = disp_rate
         self.intro_time = introduce_time
         (self.a1num, self.a2num) = (20, 20)
